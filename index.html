@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude MCP Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <span class="header-logo" aria-hidden="true">⚡</span>
+        <div>
+          <h1 class="header-title">Claude MCP Marketplace</h1>
+          <p class="header-subtitle">Official servers from the <a href="https://registry.modelcontextprotocol.io" target="_blank" rel="noopener noreferrer">MCP Registry</a></p>
+        </div>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- ── Search ── -->
+    <section class="search-section" aria-label="Search and filter">
+      <div class="search-wrapper">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input
+          type="search"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search the MCP Registry…"
+          aria-label="Search MCP servers"
+          autocomplete="off"
+        />
+        <button class="search-clear hidden" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+      <p class="search-hint" id="searchHint">Powered by <code>registry.modelcontextprotocol.io</code></p>
+    </section>
+
+    <!-- ── Featured (always shown unless search active) ── -->
+    <section id="featuredSection" aria-labelledby="featuredHeading">
+      <h2 class="section-heading" id="featuredHeading">Featured Servers</h2>
+      <div class="cards-grid" id="featuredGrid" aria-live="polite" aria-busy="true">
+        <!-- skeletons injected by JS -->
+      </div>
+    </section>
+
+    <!-- ── Search results (shown when user searches) ── -->
+    <section id="resultsSection" class="hidden" aria-labelledby="resultsHeading">
+      <div class="section-header-row">
+        <h2 class="section-heading" id="resultsHeading">Search Results</h2>
+        <span class="results-count" id="resultsCount"></span>
+      </div>
+      <div class="cards-grid" id="resultsGrid" aria-live="polite"></div>
+      <div class="load-more-row" id="loadMoreRow">
+        <button class="btn-load-more hidden" id="loadMoreBtn">Load more</button>
+      </div>
+    </section>
+
+    <!-- ── Empty state ── -->
+    <p class="no-results hidden" id="noResults" role="status">
+      No servers found for that search. Try a different keyword.
+    </p>
+
+  </main>
+
+  <!-- ── Install Modal ── -->
+  <div class="modal-overlay hidden" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modalTitle">Install Server</h2>
+        <button class="modal-close" id="modalClose" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <div class="skeleton-lines">
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+          <div class="skeleton-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Claude MCP Marketplace · Server data sourced live from <a href="https://registry.modelcontextprotocol.io" target="_blank" rel="noopener noreferrer">registry.modelcontextprotocol.io</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

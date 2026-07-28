@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "claude-mcp-marketplace",
+  "version": "1.0.0",
+  "description": "Community marketplace of MCP-focused Claude Code plugins",
+  "owner": {
+    "name": "brndnbrlw",
+    "email": "support@example.com"
+  },
+  "plugins": [
+    {
+      "name": "github-mcp",
+      "description": "GitHub MCP server listing and install guidance",
+      "version": "1.0.0",
+      "source": "./plugins/github-mcp",
+      "category": "development"
+    },
+    {
+      "name": "salesforce-mcp",
+      "description": "Salesforce MCP server listing and install guidance",
+      "version": "1.0.0",
+      "source": "./plugins/salesforce-mcp",
+      "category": "development"
+    },
+    {
+      "name": "atlassian-mcp",
+      "description": "Atlassian MCP server listing and install guidance",
+      "version": "1.0.0",
+      "source": "./plugins/atlassian-mcp",
+      "category": "productivity"
+    },
+    {
+      "name": "datadog-mcp",
+      "description": "Datadog MCP server listing and install guidance",
+      "version": "1.0.0",
+      "source": "./plugins/datadog-mcp",
+      "category": "development"
+    },
+    {
+      "name": "gitlab-mcp",
+      "description": "GitLab MCP server listing and install guidance",
+      "version": "1.0.0",
+      "source": "./plugins/gitlab-mcp",
+      "category": "development"
+    },
+    {
+      "name": "microsoft-365-mcp",
+      "description": "Microsoft 365 MCP server listing and install guidance",
+      "version": "1.0.0",
+      "source": "./plugins/microsoft-365-mcp",
+      "category": "productivity"
+    }
+  ]
+}

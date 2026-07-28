@@ -1,0 +1,10 @@
+{
+  "name": "microsoft-365-mcp",
+  "version": "1.0.0",
+  "description": "Microsoft 365 MCP server listing for Claude Code marketplace browsing",
+  "author": {
+    "name": "brndnbrlw",
+    "email": "support@example.com"
+  },
+  "homepage": "https://github.com/microsoft/mcp"
+}
