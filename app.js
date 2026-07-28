@@ -302,9 +302,11 @@ function buildInstallConfig(server) {
   const config = { command, args };
   if (Object.keys(env).length) config.env = env;
 
-  /* Extra prereqs from env vars */
+  /* Extra prereqs from env vars (escape registry data before HTML insertion) */
   for (const ev of pkg.environmentVariables || []) {
-    if (ev.description) prereqs.push(`${ev.name}: ${ev.description}`);
+    if (ev.description) {
+      prereqs.push(`<code>${escapeHTML(ev.name)}</code>: ${escapeHTML(ev.description)}`);
+    }
   }
 
   return {
