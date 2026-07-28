@@ -1,0 +1,10 @@
+{
+  "name": "gitlab-mcp",
+  "version": "1.0.0",
+  "description": "GitLab MCP server listing for Claude Code marketplace browsing",
+  "author": {
+    "name": "brndnbrlw",
+    "email": "support@example.com"
+  },
+  "homepage": "https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp"
+}

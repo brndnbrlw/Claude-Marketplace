@@ -1,0 +1,10 @@
+{
+  "name": "salesforce-mcp",
+  "version": "1.0.0",
+  "description": "Salesforce MCP server listing for Claude Code marketplace browsing",
+  "author": {
+    "name": "brndnbrlw",
+    "email": "support@example.com"
+  },
+  "homepage": "https://github.com/salesforcecli/mcp"
+}

@@ -49,6 +49,18 @@ The marketplace:
    - **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
 4. Restart Claude Desktop.
 
+## Claude Code Marketplace Source
+
+This repository now includes a Claude Code marketplace manifest at:
+
+`/.claude-plugin/marketplace.json`
+
+In Claude Code CLI, open **Plugins → Add Marketplace** and paste:
+
+`https://github.com/brndnbrlw/Claude-Marketplace`
+
+Claude Code should detect the marketplace and show the MCP-focused plugin entries defined in this repo.
+
 ## GitHub Pages
 
 Push this repository to GitHub and enable **Settings → Pages → Deploy from branch (main / root)** to publish the marketplace publicly.

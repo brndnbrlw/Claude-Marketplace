@@ -1,0 +1,10 @@
+{
+  "name": "atlassian-mcp",
+  "version": "1.0.0",
+  "description": "Atlassian MCP server listing for Claude Code marketplace browsing",
+  "author": {
+    "name": "brndnbrlw",
+    "email": "support@example.com"
+  },
+  "homepage": "https://github.com/atlassian/atlassian-mcp-server"
+}
